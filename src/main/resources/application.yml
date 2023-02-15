@@ -1,0 +1,16 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: 9ebdd4c5e3e6a2d8e8c7
+            clientSecret: 24158fae623984440efbd6e56cf32413b44f5b68
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#  endpoint:
+#    env:
+#      enabled: true
