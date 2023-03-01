@@ -6,6 +6,9 @@ spring:
           github:
             clientId: 9ebdd4c5e3e6a2d8e8c7
             clientSecret: 24158fae623984440efbd6e56cf32413b44f5b68
+          scope:
+            - user:email
+            - read:user
 #management:
 #  endpoints:
 #    web:
