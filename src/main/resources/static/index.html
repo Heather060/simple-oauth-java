@@ -1,16 +1,17 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Demo</title>
-    <meta name="description" content=""/>
-    <meta name="viewport" content="width=device-width"/>
-    <base href="/"/>
-    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
+    <base href="/" />
+    <link rel="stylesheet" type="text/css"
+          href="/webjars/bootstrap/css/bootstrap.min.css" />
     <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/webjars/js-cookie/js.cookie.js"></script>
+    <script type="text/javascript"
+            src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
 <h1>Login</h1>
@@ -30,8 +31,8 @@
     $
         .ajaxSetup({
             beforeSend : function(xhr, settings) {
-                if (settings.type == 'POST' || settings.type == 'PUT'
-                    || settings.type == 'DELETE') {
+                if (settings.type === 'POST' || settings.type === 'PUT'
+                    || settings.type === 'DELETE') {
                     if (!(/^http:.*/.test(settings.url) || /^https:.*/
                         .test(settings.url))) {
                         // Only send the token to relative URLs i.e. locally.
@@ -51,7 +52,7 @@
             $("#user").html('');
             $(".unauthenticated").show();
             $(".authenticated").hide();
-        })
+        });
         return true;
     }
 </script>
